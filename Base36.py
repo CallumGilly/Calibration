@@ -17,4 +17,4 @@ def b10tob36(num):
 
 
 def b36tob10(num):
-    return str(int(num), 36)
+    return str(int(num, 36))
