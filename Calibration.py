@@ -14,11 +14,10 @@ def calibrate(alt, needed_altitudes, adjustments):
             needed_altitudes[1] - needed_altitudes[0])
 
 
-if __name__ == "__main__":
-    while True:
-        altitude = int(input("Enter the given altitude: "))
-        neededAltitudes = get_alts_needed(altitude)
-        adj1 = int(input("Enter the adjustment at " + str(neededAltitudes[0]) + "ft: "))
-        adj2 = int(input("Enter the adjustment at " + str(neededAltitudes[1]) + "ft: "))
+def calibrate():
+    altitude = int(input("Enter altitude: "))
+    needed_altitudes = get_alts_needed(altitude)
+    adj1 = int(input("Adj at " + str(needed_altitudes[0]) + "ft: "))
+    adj2 = int(input("Adj at " + str(needed_altitudes[1]) + "ft: "))
 
-        print(str(calibrate(altitude, neededAltitudes, [adj1, adj2])) + "ft")
+    print(str(calibrate(altitude, needed_altitudes, [adj1, adj2])) + "ft")
