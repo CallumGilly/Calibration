@@ -8,7 +8,7 @@ def calibrate():
     adj1 = int(input("Adj at " + str(needed_altitudes[0]) + "ft: "))
     adj2 = int(input("Adj at " + str(needed_altitudes[1]) + "ft: "))
 
-    print(str(Calibration.calibrate(altitude, needed_altitudes, [adj1, adj2])) + "ft")
+    print(str(altitude) + "ft -> " + str(Calibration.calibrate(altitude, needed_altitudes, [adj1, adj2])) + "ft")
 
 
 def b10tob36():
